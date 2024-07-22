@@ -1,15 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OCR App</title>
 </head>
 <body>
-    <h1>Upload an image to extract text</h1>
+    <h1>Subir una imagen para extraer texto    </h1>
     <form action="/upload" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" accept="image/*">
-        <button type="submit">Upload</button>
+        <label for="file">Elija un archivo de imagen:</label>
+        <input type="file" id="file" name="file" accept="image/*" title="Choose an image file to upload">
+        <button type="submit">Subir</button>
     </form>
 </body>
 </html>
